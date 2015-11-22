@@ -12,6 +12,11 @@
     "bluebird": "^2.9.34",
     "express": "^4.13.3",
     "lodash": "^3.10.1",
-    "node-twitter-api": "^1.6.0"
+    "node-twitter-api": "^1.6.0",
+    "twitter": "latest"
+  },
+  "engines": {
+    "node": "0.12.4"
   }
+
 }

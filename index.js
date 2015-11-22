@@ -8,6 +8,8 @@ var express = require("express"),
 
 var app = express();
 
+app.use(cors());
+
 controllers(app);
 
 app.listen((process.env.PORT || 5000), function () {

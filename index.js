@@ -5,7 +5,8 @@ require("./lib/globals");
 var express = require("express"),
 
 	controllers = include("controllers"),
-	config = include("config");
+	config = include("config"),
+	secret = include("secret");
 
 var app = express();
 

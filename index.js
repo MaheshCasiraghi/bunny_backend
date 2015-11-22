@@ -4,15 +4,14 @@ require("./lib/globals");
 
 var express = require("express"),
 
-	controllers = include("controllers"),
-	config = include("config");
+	controllers = include("controllers");
 
 var app = express();
 
 controllers(app);
 
-app.listen(config.server.port, function () {
-	console.log("Listening on " + config.server.port + "...");
+app.listen((process.env.PORT || 5000), function () {
+	console.log("Listening on " + (process.env.PORT || 5000) + "...");
 });
 
 
